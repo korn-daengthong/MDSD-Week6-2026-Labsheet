@@ -429,6 +429,8 @@ ElevatedButton(
 ```text
 บันทึกรูปและคำตอบที่นี่
 ```
+<img width="551" height="192" alt="image" src="https://github.com/user-attachments/assets/daf7dad4-e22b-47bd-80c0-7d267a916cb6" />
+
 
 ### ขั้นตอนที่ 3.2 — 🧠 คิดเอง/ออกแบบเอง
 
@@ -456,6 +458,8 @@ Future<void> updateDemoPost() async {
 ```text
 บันทึกรูปและคำตอบที่นี่
 ```
+<img width="565" height="412" alt="image" src="https://github.com/user-attachments/assets/c07899f7-a7fd-42ee-bded-4c282c0f4f7b" />
+
 ---
 
 ## ส่วนที่ 4: ใช้ AI ช่วย Generate โค้ด API Client
