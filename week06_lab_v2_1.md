@@ -92,7 +92,14 @@ https://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=YOUR_API_KEY&uni
 
 ```text
 บันทึกรูปและคำตอบที่นี่
+กรณีที่เลือกทดสอบ: เลือกลบพารามิเตอร์ appid (API Key) ออกจาก URL เพื่อจำลองกรณีที่แอปพลิเคชันไม่ได้ส่งคีย์ยืนยันตัวตน
+
+คาดการณ์ Status Code: คาดว่าน่าจะได้ 401 Unauthorized เพราะเซิร์ฟเวอร์น่าจะปฏิเสธการให้ข้อมูลหากไม่สามารถระบุตัวตนหรือไม่มีสิทธิ์เข้าถึง
+
+Status Code จริงที่ได้: ได้ 401 Unauthorized และมีข้อความใน JSON ว่า "Invalid API key" ซึ่งตรงกับที่คาดการณ์ไว้
 ```
+<img width="791" height="276" alt="image" src="https://github.com/user-attachments/assets/b1dd14ec-0415-4dd8-acf4-0e5b512a06b8" />
+
 ---
 
 ## ส่วนที่ 2: สร้าง Model Class และเรียก API ด้วย http Package
