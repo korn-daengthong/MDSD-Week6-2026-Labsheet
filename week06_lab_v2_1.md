@@ -753,6 +753,8 @@ void main() {
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="485" height="119" alt="image" src="https://github.com/user-attachments/assets/9166c655-ad2c-4625-a31a-88d296394036" />
+
 ### ขั้นตอนที่ 7.3 — 🔧 ทำตาม (Interface) + 🧠 คิดเอง (Implementation)
 
 ในสัปดาห์ก่อนหน้า มีการเรียนหลักการ **Repository Pattern** ไปแล้วว่า Widget/ViewModel ไม่ควรรู้จักแหล่งข้อมูลโดยตรง (เช่น เรียก `http.get()` เองในไฟล์ UI) แต่ควรรู้จักผ่าน **Interface** เท่านั้น เพื่อให้สลับแหล่งข้อมูลได้โดยไม่ต้องแก้ Widget สัปดาห์นี้ Campus Marketplace มีแหล่งข้อมูลจริงให้ดึง (REST API) ซึ่งจะนำทฤษฎีเรื่อง Repository Pattern มาใช้งานจริง
@@ -890,6 +892,13 @@ class _HomePageState extends State<HomePage> {
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/42911081-38a3-437f-ab26-ee2149aa2a4c" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3200518f-f580-4603-b6e4-3035406e7697" />
+<img width="1366" height="757" alt="image" src="https://github.com/user-attachments/assets/b1c99d80-b3dd-4abf-b089-d8b22c34614d" />
+<img width="1364" height="768" alt="image" src="https://github.com/user-attachments/assets/8c78d717-a37f-401c-8e3c-edd833f0225e" />
+
+
+
 
 ---
 
