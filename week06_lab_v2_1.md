@@ -604,12 +604,30 @@ Future<Weather> fetchWeatherWithDio(String city) async {
 
 ```text
 บันทึกคำตอบที่นี่
+1.การแปลง JSON: dio จะแปลงข้อมูล JSON กลับมาเป็น Map ให้อัตโนมัติผ่าน response.data ทำให้ไม่ต้องเรียกใช้คำสั่ง jsonDecode() เองเหมือนตอนใช้แพ็กเกจ http
+
+2.การจัดการ Query Parameters: dio สามารถกำหนดพารามิเตอร์แบบ Map ลงใน queryParameters ได้โดยตรง ทำให้โค้ดอ่านง่ายและเป็นระเบียบกว่า http ที่ต้องนำตัวแปรไปต่อท้าย String URL เองให้ยืดยาว
+
+3.การจัดการ Exception (ข้อผิดพลาด): dio รวบรวม Error ไว้ใน DioException ตัวเดียว แล้วให้เราเช็คสาเหตุย่อยผ่าน e.type ทำให้จัดการโค้ดได้เป็นสัดส่วนกว่า http ที่ต้องดักจับ Exception แยกหลายชนิด (เช่น TimeoutException, ClientException)
 ```
+
 >
 > ✅ **Checkpoint 5.3** แสดงโค้ดเงื่อนไข `DioExceptionType` เพิ่มเติมที่เขียนเองในขั้นตอนที่ 5.4 
 
 ```text
 บันทึกคำตอบที่นี่
+} on DioException catch (e) {
+  if (e.type == DioExceptionType.connectionTimeout) {
+    throw Exception('การเชื่อมต่อหมดเวลา กรุณาลองใหม่อีกครั้ง');
+  } else if (e.type == DioExceptionType.badResponse) {
+    throw Exception('เซิร์ฟเวอร์ตอบกลับผิดพลาด (${e.response?.statusCode})');
+  } else if (e.type == DioExceptionType.receiveTimeout) {
+    throw Exception('เซิร์ฟเวอร์ใช้เวลาตอบกลับนานเกินไป กรุณาลองใหม่');
+  } else if (e.type == DioExceptionType.connectionError) {
+    throw Exception('ไม่สามารถเชื่อมต่อเครือข่ายได้ ตรวจสอบอินเทอร์เน็ตของคุณ');
+  }
+  throw Exception('เกิดข้อผิดพลาด: ${e.message}');
+}
 ```
 ---
 
