@@ -515,6 +515,10 @@ GET https://fakestoreapi.com/products
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="608" height="369" alt="image" src="https://github.com/user-attachments/assets/0a78d39f-c07e-4ba4-9183-1aacd8c4c418" />
+<img width="608" height="385" alt="image" src="https://github.com/user-attachments/assets/1cfe2136-7656-46b0-a489-70e595497bb1" />
+<img width="620" height="380" alt="image" src="https://github.com/user-attachments/assets/a3a8c5f1-0124-4f0c-b4c7-13b872346e7f" />
+
 
 ---
 
@@ -576,6 +580,8 @@ Future<Weather> fetchWeatherWithDio(String city) async {
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="284" height="96" alt="image" src="https://github.com/user-attachments/assets/0d00dda4-ee41-410a-b675-bf7ee2d156fa" />
+
 ### ขั้นตอนที่ 5.4 — 🧠 คิดเอง/ออกแบบเอง
 
 `DioException` มีหลายชนิด (`DioExceptionType`) แต่โค้ดในขั้นตอนที่ 5.2 จัดการเฉพาะ `connectionTimeout` ด้านล่างเป็นตัวอย่างการเพิ่มเงื่อนไขให้อีก 1 ชนิด (`badResponse`) ให้ดูเป็นแนวทาง จากนั้นให้เพิ่มเงื่อนไข `else if` อีกอย่างน้อย 1 ชนิดด้วยตัวเอง โดยเลือกจาก `DioExceptionType.receiveTimeout` หรือ `DioExceptionType.connectionError` (ห้ามซ้ำกับ `badResponse` ที่ให้เป็นตัวอย่างแล้ว) พร้อมข้อความแจ้งเตือนภาษาไทยที่เหมาะสมกับสาเหตุนั้นโดยเฉพาะ (ค้นคว้าความหมายของแต่ละชนิดได้จากเอกสารของแพ็กเกจ `dio` บน pub.dev)
