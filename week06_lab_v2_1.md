@@ -196,6 +196,10 @@ void main() {
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="498" height="118" alt="image" src="https://github.com/user-attachments/assets/65df5b07-c1c6-4e1f-80e5-3d6051025b1c" />
+<img width="756" height="323" alt="image" src="https://github.com/user-attachments/assets/5c0fecf6-e887-4882-a552-a09ca28ca089" />
+<img width="614" height="320" alt="image" src="https://github.com/user-attachments/assets/a93f4acb-d2fa-4550-8694-279f716b8ecb" />
+
 ### ขั้นตอนที่ 2.3 — 🧠 คิดเอง/ออกแบบเอง
 
 สร้างไฟล์ `lib/services/weather_service.dart` แล้วเขียน `WeatherService` ต่อจากตัวอย่างโครงเริ่มต้นด้านล่างนี้  
@@ -246,6 +250,8 @@ class WeatherService {
 ```text
 บันทึกรูปและคำตอบที่นี่
 ```
+<img width="552" height="90" alt="image" src="https://github.com/user-attachments/assets/fae8afe9-4f77-45be-83cc-8d69246d6207" />
+
 
 ### ขั้นตอนที่ 2.4 — 🧠 คิดเอง/ออกแบบเอง
 
@@ -365,6 +371,13 @@ class MyApp extends StatelessWidget {
 ```text
 บันทึกรูปที่นี่
 ```
+<img width="1055" height="390" alt="image" src="https://github.com/user-attachments/assets/80785e20-c69f-41d6-a95f-0728712a2e82" />
+<img width="1051" height="340" alt="image" src="https://github.com/user-attachments/assets/7ac49429-76c6-4a04-b237-7e837cb46d6d" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/af0e5f04-6744-48e9-b9b6-288e7eb0ab10" />
+
+
+
+
 
 ---
 
